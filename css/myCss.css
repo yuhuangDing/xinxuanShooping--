@@ -124,8 +124,28 @@ ul{
     text-align: center;
 }
 .rainbow-item-1 {
+     border-top-color:
+             #e53935;
+ }
+.rainbow-item-2 {
     border-top-color:
-            #e53935;
+            #fd7e14;
+}
+.rainbow-item-3 {
+    border-top-color:
+            #1c7430;
+}
+.rainbow-item-4 {
+    border-top-color:
+            #007bff;
+}
+.rainbow-item-5 {
+     border-top-color:
+             #6f42c1;
+ }
+.rainbow-item-6 {
+    border-top-color:
+            #ffc107;
 }
 .span1 {
     width: 234px;
@@ -164,4 +184,8 @@ ul{
     color:#605751;
     font-size:28px;
     font-style:normal
+}
+.bianju{
+    margin-top: 15px;
+    margin-bottom: -5px;
 }

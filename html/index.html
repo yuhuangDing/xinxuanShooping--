@@ -233,23 +233,66 @@
     <!--秒杀栏目-->
         <div class="row" style="margin-top: 30px;">
             <div class="col-xl-1">
-                占位
+
             </div>
-            <div class="col-xl-10">
+            <div class="col-xl-10 d-inline-flex p-3 ">
                 <div class="flashsale-countdown rainbow-item-1 span1">
                 <div class="round" style="margin-bottom: 5px ;margin-top: -15px">22:00 场</div>
-                <img src="../pic/sd.svg" width="34" height="53" alt="闪购">
-                <div class="desc">距离结束还有</div>
+                <img src="../pic/sd.svg" width="34" height="53" style="margin-top: 15px;margin-bottom: 15px;" alt="闪购">
+                <div class="desc">距离开始还有</div>
                 <div class="countdown">
                     <span class="spann" id="shi">00</span>
-                    <i>:</i>
+                    <i id="i1">:</i>
                     <span class="spann" id="fen">00</span>
-                    <i>:</i>
+                    <i id="i2">:</i>
                     <span class="spann" id="miao">00</span>
+                    <h4 hidden="ture" id="kaishi">开始抢购了！</h4>
                 </div>
+                </div>
+
+                <div class="flashsale-countdown rainbow-item-2 span1">
+                    <div class="round" style="margin-bottom: 5px ;margin-top: -15px;margin-right: 15px;margin-left: 15px;color: #4e555b;font-size: 15px;">耐克NIKE ZOOM WINFLO-6 运动鞋 黑42码 </div>
+                    <img src="../pic/ms-1.png" width="100" height="100" alt="Nike">
+                    <div class="desc bianju">秒杀价格: <b>¥ 299 </b>&nbsp;&nbsp;原价：<del style="color: red;">799</del></div>
+                    <div class="countdown">
+                        <button class="btn btn-danger qdbtn " disabled="disabled">立即抢购</button>
+                    </div>
+                </div>
+                <div class="flashsale-countdown rainbow-item-3 span1">
+                    <div class="round" style="margin-bottom: 5px ;margin-top: -15px;margin-right: 15px;margin-left: 15px;color: #4e555b;font-size: 15px;">小米Air 2019款 笔记本 4G 128G 全高清屏</div>
+                    <img src="../pic/ms-2.png" width="100" height="100" alt="Nike">
+                    <div class="desc bianju">秒杀价格: <b>¥ 2999 </b>&nbsp;&nbsp;原价：<del style="color: red;">3699</del></div>
+                    <div class="countdown">
+                        <button class="btn btn-danger qdbtn"  disabled="disabled">立即抢购</button>
+                    </div>
+                </div>
+                <div class="flashsale-countdown rainbow-item-4 span1">
+                    <div class="round" style="margin-bottom: 5px ;margin-top: -15px;margin-right: 15px;margin-left: 15px;color: #4e555b;font-size: 15px;">华为nova 6 5G  麒麟990芯片 8GB+128GB 全网通</div>
+                    <img src="../pic/ms-3.png" width="100" height="100" alt="Nike">
+                    <div class="desc bianju">秒杀价格: <b>¥ 2899 </b>&nbsp;&nbsp;原价：<del style="color: red;">3799</del></div>
+                    <div class="countdown">
+                        <button class="btn btn-danger qdbtn" disabled="disabled">立即抢购</button>
+                    </div>
+                </div>
+                <div class="flashsale-countdown rainbow-item-5 span1">
+                    <div class="round" style="margin-bottom: 5px ;margin-top: -15px;margin-right: 15px;margin-left: 15px;color: #4e555b;font-size: 15px;">索尼（SONY） 32英寸 高清液晶平板电视 </div>
+                    <img src="../pic/ms-4.png" width="100" height="100" alt="Nike">
+                    <div class="desc bianju">秒杀价格: <b>¥ 999 </b>&nbsp;&nbsp;原价：<del style="color: red;">1599</del></div>
+                    <div class="countdown">
+                        <button class="btn btn-danger qdbtn" disabled="disabled">立即抢购</button>
+                    </div>
+                </div>
+                <div class="flashsale-countdown rainbow-item-6 span1">
+                    <div class="round" style="margin-bottom: 5px ;margin-top: -15px;margin-right: 15px;margin-left: 15px;color: #4e555b;font-size: 15px;"> 蒙牛 特仑苏 纯牛奶 250ml*16 礼盒装  </div>
+                    <img src="../pic/ms-5.png" width="100" height="100" alt="Nike">
+                    <div class="desc bianju">秒杀价格: <b>¥ 49 &nbsp;&nbsp;原价：<del style="color: red;">79</del></div>
+                    <div class="countdown">
+                        <button class="btn btn-danger qdbtn" disabled="disabled">立即抢购</button>
+                    </div>
                 </div>
             </div>
-            <div class="col-xl-1">占位</div>
+
+            <div class="col-xl-1"> </div>
         </div>
     <!--商品展示栏目-->
     <!--Jquery区域-->
@@ -290,7 +333,7 @@
         //***************************************************倒计时******************************************************
         function countdown() {
             // 目标日期时间戳
-            const end = Date.parse(new Date('2019-12-7 22:00'))
+            const end = Date.parse(new Date('2019-12-7 21:33'))
             // 当前时间戳
             const now = Date.parse(new Date())
             // 相差的毫秒数
@@ -308,12 +351,28 @@
             document.getElementById("shi").innerHTML =hr;
             document.getElementById("fen").innerHTML=min;
             document.getElementById("miao").innerHTML=sec;
-
             //console.log(`${day}天 ${hr}小时 ${min}分钟 ${sec}秒`)
             // 一秒后递归
             setTimeout(function () {
-                countdown()
+                countdown();
             }, 1000)
+            if (msec===0||msec<0)
+            {
+                flag=1;
+                $("#shi").attr('hidden',true);
+                $("#fen").attr('hidden',true);
+                $("#miao").attr('hidden',true);
+                $("#i1").attr('hidden',true);
+                $("#i2").attr('hidden',true);
+                $("#kaishi").attr('hidden',false);
+            }
+            else flag=0;
+            if(flag===1)
+            {
+                $(".qdbtn").attr('disabled',false);
+                return;
+            }
+
         }
         //**************************************************************************************************************
 
