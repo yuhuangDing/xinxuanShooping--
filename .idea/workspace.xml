@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4e0737e4-9513-463d-9f0e-27a34780d01f" name="Default Changelist" comment="‘demo01">
-      <change afterPath="$PROJECT_DIR$/pic/sp-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pic/sp-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pic/sp-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pic/sp-4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pic/sp-10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pic/sp-11.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pic/sp-12.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pic/sp-5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pic/sp-6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pic/sp-7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pic/sp-8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pic/sp-9.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/myCss.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/myCss.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -94,7 +97,8 @@
       <workItem from="1575365386626" duration="501000" />
       <workItem from="1575366114969" duration="13061000" />
       <workItem from="1575448902009" duration="17620000" />
-      <workItem from="1575720452240" duration="8044000" />
+      <workItem from="1575720452240" duration="8197000" />
+      <workItem from="1575772622293" duration="4320000" />
     </task>
     <task id="LOCAL-00001" summary="‘demo01">
       <created>1575720847480</created>
@@ -138,9 +142,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="564" y="330" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1575726633472" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1575345812529">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1575775046996">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1575345812529" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1575775046996" />
   </component>
 </project>

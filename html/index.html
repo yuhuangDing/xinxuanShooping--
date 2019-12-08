@@ -46,309 +46,486 @@
     </nav>
 
     <div class="container-fluid">
-    <!--搜索与热门提示-->
-    <div class="row" style="margin-top: 4px;margin-bottom: 4px;">
-        <div class="col-xl-4"> </div>
-        <div class="col-xl-7">
-                <form class="form-inline">
-                     <input class="form-control " type="search" placeholder="搜索商品" aria-label="Search">
-                    <button class="btn btn-outline-success " style="margin-left: 10px;" type="submit">搜索<span class="glyphicon glyphicon-search ss-wz"></span></button>
-                   <p class="ss-text">  <span class="glyphicon glyphicon-fire" style="color: red;"></span>本周热门： <a href="#">冬装</a>&nbsp;<a href="#">电暖器</a>&nbsp;<a href="#">坚果炒货</a> </p>
-                </form>
+        <!--搜索与热门提示-->
+        <div class="row" style="margin-top: 4px;margin-bottom: 4px;">
+            <div class="col-xl-4"> </div>
+            <div class="col-xl-7">
+                    <form class="form-inline">
+                         <input class="form-control " type="search" placeholder="搜索商品" aria-label="Search">
+                        <button class="btn btn-outline-success " style="margin-left: 10px;" type="submit">搜索<span class="glyphicon glyphicon-search ss-wz"></span></button>
+                       <p class="ss-text">  <span class="glyphicon glyphicon-fire" style="color: red;"></span>本周热门： <a href="#">冬装</a>&nbsp;<a href="#">电暖器</a>&nbsp;<a href="#">坚果炒货</a> </p>
+                    </form>
+            </div>
         </div>
+
+        <!--导航 轮播展示 公告-->
+        <div class="row">
+            <!--左侧导航-->
+            <div class="col-xl-2" >
+                <div  class="bbs" role="navigation" aria-label="左侧导航" style="">
+                <ul >
+                    <li  class="cate_menu_item" data-index="1" >
+                        <a target="_blank" class="cate_menu_lk" href="#">家用电器</a>
+                    </li>
+                    <li class="cate_menu_item" data-index="2" >
+                        <a target="_blank" class="cate_menu_lk" href="#">手机</a>
+                        <span class="cate_menu_line">/</span>
+                        <a target="_blank" class="cate_menu_lk" href="#">数码</a>
+                    </li>
+                    <li  class="cate_menu_item" data-index="3">
+                        <a target="_blank" class="cate_menu_lk" href="#">电脑</a>
+                        <span class="cate_menu_line">/</span>
+                        <a target="_blank" class="cate_menu_lk" href="#">办公</a>
+                    </li>
+                    <li class="cate_menu_item" data-index="4" >
+                        <a target="_blank" class="cate_menu_lk" href="#">家居</a>
+                        <span class="cate_menu_line">/</span>
+                        <a target="_blank" class="cate_menu_lk" href="#">家装</a>
+                        <span class="cate_menu_line">/</span>
+                        <a target="_blank" class="cate_menu_lk" href="#">厨具</a>
+                    </li>
+                    <li class="cate_menu_item" data-index="5" >
+                        <a target="_blank" class="cate_menu_lk" href="#">男装</a>
+                        <span class="cate_menu_line">/</span>
+                        <a target="_blank" class="cate_menu_lk" href="#">女装</a>
+                        <span class="cate_menu_line">/</span>
+                        <a target="_blank" class="cate_menu_lk" href="#">童装</a>
+                        <span class="cate_menu_line">/</span>
+                        <a target="_blank" class="cate_menu_lk" href="#">内衣</a>
+                    </li>
+                    <li class="cate_menu_item" data-index="6" >
+                        <a target="_blank" class="cate_menu_lk" href="#">美妆</a>
+                        <span class="cate_menu_line">/</span>
+                        <a target="_blank" class="cate_menu_lk" href="#">个护清洁</a>
+                        <span class="cate_menu_line">/</span>
+                        <a target="_blank" class="cate_menu_lk" href="#">宠物</a>
+                    </li>
+                    <li class="cate_menu_item" data-index="7" >
+                        <a target="_blank" class="cate_menu_lk" href="#">女鞋</a>
+                        <span class="cate_menu_line">/</span>
+                        <a target="_blank" class="cate_menu_lk" href="#">箱包</a>
+                        <span class="cate_menu_line">/</span>
+                        <a target="_blank" class="cate_menu_lk" href="#">钟表</a>
+                        <span class="cate_menu_line">/</span>
+                        <a target="_blank" class="cate_menu_lk" href="#">珠宝</a>
+                    </li>
+                    <li class="cate_menu_item" data-index="8" >
+                        <a target="_blank" class="cate_menu_lk" href="#">男鞋</a>
+                        <span class="cate_menu_line">/</span>
+                        <a target="_blank" class="cate_menu_lk" href="#">运动</a>
+                        <span class="cate_menu_line">/</span>
+                        <a target="_blank" class="cate_menu_lk" href="#">户外</a>
+                    </li>
+                    <li class="cate_menu_item" data-index="9" >
+                        <a target="_blank" class="cate_menu_lk" href="#">汽车</a>
+                        <span class="cate_menu_line">/</span>
+                        <a target="_blank" class="cate_menu_lk" href="#">汽车用品</a>
+                    </li>
+                    <li class="cate_menu_item" data-index="10" >
+                        <a target="_blank" class="cate_menu_lk" href="#">母婴</a>
+                        <span class="cate_menu_line">/</span>
+                        <a target="_blank" class="cate_menu_lk" href="#">玩具乐器</a>
+                    </li>
+                    <li class="cate_menu_item" data-index="11" >
+                        <a target="_blank" class="cate_menu_lk" href="#">食品</a>
+                        <span class="cate_menu_line">/</span>
+                        <a target="_blank" class="cate_menu_lk" href="#">酒类</a>
+                        <span class="cate_menu_line">/</span>
+                        <a target="_blank" class="cate_menu_lk" href="#">生鲜</a>
+                        <span class="cate_menu_line">/</span>
+                        <a target="_blank" class="cate_menu_lk" href="#">特产</a>
+                    </li>
+                    <li class="cate_menu_item" data-index="12" >
+                        <a target="_blank" class="cate_menu_lk" href="#">艺术</a>
+                        <span class="cate_menu_line">/</span>
+                        <a target="_blank" class="cate_menu_lk" href="#">礼品鲜花</a>
+                        <span class="cate_menu_line">/</span>
+                        <a target="_blank" class="cate_menu_lk" href="#">绿植</a>
+                    </li>
+                    <li class="cate_menu_item" data-index="13" >
+                        <a target="_blank" class="cate_menu_lk" href="#">医药保健</a>
+
+                    </li>
+                    <li class="cate_menu_item" data-index="14" >
+                        <a target="_blank" class="cate_menu_lk" href="#">图书</a>
+                        <span class="cate_menu_line">/</span>
+                        <a target="_blank" class="cate_menu_lk" href="#">文娱</a>
+                        <span class="cate_menu_line">/</span>
+                        <a target="_blank" class="cate_menu_lk" href="#">教育</a>
+                        <span class="cate_menu_line">/</span>
+                        <a target="_blank" class="cate_menu_lk" href="#">电子书</a>
+                    </li>
+                    <li class="cate_menu_item" data-index="15" >
+                        <a target="_blank" class="cate_menu_lk" href="#">机票</a>
+                        <span class="cate_menu_line">/</span>
+                        <a target="_blank" class="cate_menu_lk" href="#">酒店</a>
+                        <span class="cate_menu_line">/</span>
+                        <a target="_blank" class="cate_menu_lk" href="#">旅游</a>
+                        <span class="cate_menu_line">/</span>
+                        <a target="_blank" class="cate_menu_lk" href="#">生活</a>
+                    </li>
+                    <li class="cate_menu_item" data-index="16" >
+                        <a target="_blank" class="cate_menu_lk" href="#">理财</a>
+                        <span class="cate_menu_line">/</span>
+                        <a target="_blank" class="cate_menu_lk" href="#">众筹</a>
+                        <span class="cate_menu_line">/</span>
+                        <a target="_blank" class="cate_menu_lk" href="#">保险</a>
+                    </li>
+                    <li class="cate_menu_item" data-index="17" >
+                        <a target="_blank" class="cate_menu_lk" href="#">安装</a>
+                        <span class="cate_menu_line">/</span>
+                        <a target="_blank" class="cate_menu_lk" href="#">维修</a>
+                        <span class="cate_menu_line">/</span>
+                        <a target="_blank" class="cate_menu_lk" href="#">清洗</a>
+                        <span class="cate_menu_line">/</span>
+                        <a target="_blank" class="cate_menu_lk" href="#">二手</a>
+                    </li>
+
+                </ul>
+                </div>
+               <!--
+                <div class="list-group" id="list-tab" role="tablist" style="margin-left:-20px;margin-right: -30px; ">
+                    <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list" href="#" role="tab" >Home</a>
+                    <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#" role="tab" >Profile</a>
+                    <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#" role="tab" >Messages</a>
+                    <a class="list-group-item list-group-item-action" id="list-settings-lis" data-toggle="list" href="#" role="tab" >Settings</a>
+                    <a class="list-group-item list-group-item-action" id="list-settings-li" data-toggle="list" href="#" role="tab" >Settings</a>
+                    <a class="list-group-item list-group-item-action" id="list-settings-l" data-toggle="list" href="#" role="tab" >Settings</a>
+                    <a class="list-group-item list-group-item-action" id="list-setting" data-toggle="list" href="#" role="tab" >Settings</a>
+                    <a class="list-group-item list-group-item-action" id="list-settin" data-toggle="list" href="#" role="tab" >Settings</a>
+                    <a class="list-group-item list-group-item-action" id="list-setti" data-toggle="list" href="#" role="tab" >Settings</a>
+                </div>-->
+
+
+            </div>
+            <!--轮播区域-->
+            <div class="col-xl-8">
+                <div class="banner" >
+                    <div class="img-wrap">
+                        <ul>
+                            <li class="item" style="display: block">
+                                <img src="../pic/hb1.jpg" alt="" class="lunbo"></a>
+                            </li>
+                            <li class="item">
+                                <img src="../pic/hb2.jpg" alt="" class="lunbo"></a>
+                            </li>
+                            <li class="item">
+                                <img src="../pic/hb3.jpg" alt="" class="lunbo"></a>
+                            </li>
+                            <li class="item">
+                               <img src="../pic/hb4.jpg" alt="" class="lunbo"></a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="lr-tab">
+                        <div class="left btn"></div>
+                        <div class="right btn"></div>
+                    </div>
+
+                </div>
+            </div>
+            <!--公共/广告位-->
+            <div class="col-xl-2">
+                <h2>广告位招租！！！！</h2>
+            </div>
+        </div>
+
+        <!--秒杀栏目-->
+            <div class="row" style="margin-top: 10px;">
+                <div class="col-xl-1">
+
+                </div><!--占位-->
+                <!--秒杀商品展示区域-->
+                <div class="col-xl-10 d-inline-flex p-3 ">
+                    <div class="flashsale-countdown rainbow-item-1 span1">
+                    <div class="round" style="margin-bottom: 5px ;margin-top: -15px">秒杀22:00 场</div>
+                    <img src="../pic/sd.svg" width="34" height="53" style="margin-top: 15px;margin-bottom: 15px;" alt="闪购">
+                    <div class="desc">距离开始还有</div>
+                    <div class="countdown">
+                        <span class="spann" id="shi">00</span>
+                        <i id="i1">:</i>
+                        <span class="spann" id="fen">00</span>
+                        <i id="i2">:</i>
+                        <span class="spann" id="miao">00</span>
+                        <h4 hidden="ture" id="kaishi">开始抢购了！</h4>
+                    </div>
+                    </div>
+
+                    <div class="flashsale-countdown rainbow-item-2 span1">
+                        <div class="round" style="margin-bottom: 5px ;margin-top: -15px;margin-right: 15px;margin-left: 15px;color: #4e555b;font-size: 15px;">耐克NIKE ZOOM WINFLO-6 运动鞋 黑42码 </div>
+                        <img src="../pic/ms-1.png" width="100" height="100" alt="Nike">
+                        <div class="desc bianju">秒杀价格: <b>¥ 299 </b>&nbsp;&nbsp;原价：<del style="color: red;">799</del></div>
+                        <div class="countdown">
+                            <button class="btn btn-danger qdbtn " disabled="disabled">立即抢购</button>
+                        </div>
+                    </div>
+                    <div class="flashsale-countdown rainbow-item-3 span1">
+                        <div class="round" style="margin-bottom: 5px ;margin-top: -15px;margin-right: 15px;margin-left: 15px;color: #4e555b;font-size: 15px;">小米Air 2019款 笔记本 4G 128G 全高清屏</div>
+                        <img src="../pic/ms-2.png" width="100" height="100" alt="Nike">
+                        <div class="desc bianju">秒杀价格: <b>¥ 2999 </b>&nbsp;&nbsp;原价：<del style="color: red;">3699</del></div>
+                        <div class="countdown">
+                            <button class="btn btn-danger qdbtn"  disabled="disabled">立即抢购</button>
+                        </div>
+                    </div>
+                    <div class="flashsale-countdown rainbow-item-4 span1">
+                        <div class="round" style="margin-bottom: 5px ;margin-top: -15px;margin-right: 15px;margin-left: 15px;color: #4e555b;font-size: 15px;">华为nova 6 5G  麒麟990芯片 8GB+128GB 全网通</div>
+                        <img src="../pic/ms-3.png" width="100" height="100" alt="Nike">
+                        <div class="desc bianju">秒杀价格: <b>¥ 2899 </b>&nbsp;&nbsp;原价：<del style="color: red;">3799</del></div>
+                        <div class="countdown">
+                            <button class="btn btn-danger qdbtn" disabled="disabled">立即抢购</button>
+                        </div>
+                    </div>
+                    <div class="flashsale-countdown rainbow-item-5 span1">
+                        <div class="round" style="margin-bottom: 5px ;margin-top: -15px;margin-right: 15px;margin-left: 15px;color: #4e555b;font-size: 15px;">索尼（SONY） 32英寸 高清液晶平板电视 </div>
+                        <img src="../pic/ms-4.png" width="100" height="100" alt="Nike">
+                        <div class="desc bianju">秒杀价格: <b>¥ 999 </b>&nbsp;&nbsp;原价：<del style="color: red;">1599</del></div>
+                        <div class="countdown">
+                            <button class="btn btn-danger qdbtn" disabled="disabled">立即抢购</button>
+                        </div>
+                    </div>
+                    <div class="flashsale-countdown rainbow-item-6 span1">
+                        <div class="round" style="margin-bottom: 5px ;margin-top: -15px;margin-right: 15px;margin-left: 15px;color: #4e555b;font-size: 15px;"> 蒙牛 特仑苏 纯牛奶 250ml*16 礼盒装  </div>
+                        <img src="../pic/ms-5.png" width="100" height="100" alt="Nike">
+                        <div class="desc bianju">秒杀价格: <b>¥ 49 </b>&nbsp;&nbsp;原价：<del style="color: red;">79</del></div>
+                        <div class="countdown">
+                            <button class="btn btn-danger qdbtn" disabled="disabled">立即抢购</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xl-1"> </div><!--占位-->
+            </div><br/>
+
+            <!--商品展示栏目-->
+            <div class="row" style="margin-left: 1%">
+                <div class="col-xl-3" >
+                    <div class="card" style="width: 20rem;" >
+                        <img src="../pic/sp-1.png" class="card-img-top" width="150" height="200">
+                        <div class="card-body" >
+                            <h5 class="card-title"><a href="#" style="color: #0b2e13">康佳 58英寸 平板液晶电视机</a></h5>
+                            <h5 style="text-align: right;color: red">价格: <b>¥ 2499 </b>&nbsp;&nbsp;</h5>
+                            <p class="card-text" >康佳（KONKA）LED58D6 58英寸 AI人工智能 2GB+16GB内存 4K超高清 全民K歌 网络平板液晶电视机 【画质清晰不卡顿】同价位电视，这款电视内存更大！2+16G大内存快速运行！</p>
+                            <div style="margin-left: 20%">
+                            <a href="#" class="btn btn-warning" ><span class="glyphicon glyphicon-star"></span>&nbsp;加入心愿</a>
+                            <a href="#" class="btn btn-danger" >加入购物车</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="card" style="width: 20rem;">
+                        <img src="../pic/sp-2.png" class="card-img-top" width="150" height="200">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="#" style="color: #0b2e13">海信 55英寸 人工智能电视机</a></h5>
+                            <h5 style="text-align: right;color: red">价格: <b>¥ 2299 </b>&nbsp;&nbsp;</h5>
+                            <p class="card-text"> 海信（Hisense）HZ55E3D 55英寸 无边全面屏 AI语音 4K HDR 智慧语音 人工智能电视机
+                               全面屏语音电视，纤薄机身，智慧遥控，运行流畅不卡顿，丰富影视资源！咨询客服加送180天延保</p>
+                            <div style="margin-left: 20%">
+                                <a href="#" class="btn btn-warning" ><span class="glyphicon glyphicon-star"></span>&nbsp;加入心愿</a>
+                                <a href="#" class="btn btn-danger" >加入购物车</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="card" style="width: 20rem;">
+                        <img src="../pic/sp-3.png" class="card-img-top" width="150" height="200">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="#" style="color: #0b2e13">小米电视4A 55英寸 智能电视</a></h5>
+                            <h5 style="text-align: right;color: red">价格: <b>¥ 1755 </b>&nbsp;&nbsp;</h5>
+                            <p class="card-text">  小米电视4A 55英寸 4K超高清HDR 蓝牙语音 2GB+8GB人工智能语音网络液晶平板电视，老人小孩都会用的电视机！
+                                RedmiK30新品盲约开启，预约王一博同款手机即可抽奖赢手机!!!</p>
+                            <div style="margin-left: 20%">
+                                <a href="#" class="btn btn-warning" ><span class="glyphicon glyphicon-star"></span>&nbsp;加入心愿</a>
+                                <a href="#" class="btn btn-danger" >加入购物车</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="card" style="width: 20rem;">
+                        <img src="../pic/sp-4.png" class="card-img-top" width="150" height="200">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="#" style="color: #0b2e13">乐视（Letv）超级电视 55英寸</a></h5>
+                            <h5 style="text-align: right;color: red">价格: <b>¥ 1599 </b>&nbsp;&nbsp;</h5>
+                            <p class="card-text"> 乐视（Letv）超级电视 Y55C 55英寸 1.5GB+16GB大存储 窄边框4K超高清人工智能超薄网络液晶平板电视机
+                                【9号劲爆1399元限量秒杀！】 【55英寸大屏互动智能追剧！画质还原本质】 </p>
+                            <div style="margin-left: 20%">
+                                <a href="#" class="btn btn-warning" ><span class="glyphicon glyphicon-star"></span>&nbsp;加入心愿</a>
+                                <a href="#" class="btn btn-danger" >加入购物车</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-left: 1%">
+                <div class="col-xl-3" >
+                    <div class="card" style="width: 20rem;" >
+                        <img src="../pic/sp-5.png" class="card-img-top" width="150" height="200">
+                        <div class="card-body" >
+                            <h5 class="card-title"><a href="#" style="color: #0b2e13">小米CC9  6GB+64GB</a></h5>
+                            <h5 style="text-align: right;color: red">价格: <b>¥ 1499 </b>&nbsp;&nbsp;</h5>
+                            <p class="card-text" >小米CC9 3200万美颜自拍 索尼4800万超清三摄 多功能NFC 4030mAh 深蓝星球 6GB+64GB 游戏智能拍照手机  晓龙710处理器急速响应 全功能NFC是你的公交卡也是你的门卡
+                            </p>
+                            <div style="margin-left: 20%">
+                                <a href="#" class="btn btn-warning" ><span class="glyphicon glyphicon-star"></span>&nbsp;加入心愿</a>
+                                <a href="#" class="btn btn-danger" >加入购物车</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="card" style="width: 20rem;">
+                        <img src="../pic/sp-6.png" class="card-img-top" width="150" height="200">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="#" style="color: #0b2e13">三星 Galaxy Fold 12GB+512GB</a></h5>
+                            <h5 style="text-align: right;color: red">价格: <b>¥ 15999 </b>&nbsp;&nbsp;</h5>
+                            <p class="card-text"> 三星 SAMSUNG Galaxy Fold 折叠屏 量子黑 12GB+512GB 内折叠黑科技设计，7.3英寸动态显示屏，多视角六摄像头！ 来自未来的手机，拥有它仿佛拥有全世界！</p>
+                            <div style="margin-left: 20%">
+                                <a href="#" class="btn btn-warning" ><span class="glyphicon glyphicon-star"></span>&nbsp;加入心愿</a>
+                                <a href="#" class="btn btn-danger" >加入购物车</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="card" style="width: 20rem;">
+                        <img src="../pic/sp-7.png" class="card-img-top" width="150" height="200">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="#" style="color: #0b2e13">Apple iPhone 11 (A2223)</a></h5>
+                            <h5 style="text-align: right;color: red">价格: <b>¥ 5999 </b>&nbsp;&nbsp;</h5>
+                            <p class="card-text">  Apple iPhone 11 (A2223) 128GB 黑色 移动联通电信4G手机 双卡双待，一切都刚刚好，全新A13为你带来无穷力量，IOS13 全新交互更懂你的系统！全新设计的影像系统捕捉时刻的美！</p>
+                            <div style="margin-left: 20%">
+                                <a href="#" class="btn btn-warning" ><span class="glyphicon glyphicon-star"></span>&nbsp;加入心愿</a>
+                                <a href="#" class="btn btn-danger" >加入购物车</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="card" style="width: 20rem;">
+                        <img src="../pic/sp-8.png" class="card-img-top" width="150" height="200">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="#" style="color: #0b2e13">OPPO Reno Ace 8GB+128GB</a></h5>
+                            <h5 style="text-align: right;color: red">价格: <b>¥ 3199 </b>&nbsp;&nbsp;</h5>
+                            <p class="card-text"> OPPO Reno Ace 8GB+128GB 电音紫 65W超级闪充 90Hz电竞屏 高通骁龙855Plus 4G智能游戏手机 【优惠200元】65W超级闪充，高通骁龙855Plus，90Hz电竞屏！</p>
+                            <div style="margin-left: 20%">
+                                <a href="#" class="btn btn-warning" ><span class="glyphicon glyphicon-star"></span>&nbsp;加入心愿</a>
+                                <a href="#" class="btn btn-danger" >加入购物车</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin-left: 1%">
+                <div class="col-xl-3" >
+                    <div class="card" style="width: 20rem;" >
+                        <img src="../pic/sp-9.png" class="card-img-top" width="150" height="200">
+                        <div class="card-body" >
+                            <h5 class="card-title"><a href="#" style="color: #0b2e13">HLA海澜之家舒适立领羽绒服</a></h5>
+                            <h5 style="text-align: right;color: red">价格: <b>¥ 458 </b>&nbsp;&nbsp;</h5>
+                            <p class="card-text" >HLA海澜之家舒适立领羽绒服  2019秋冬 热卖时尚 轻薄鹅绒羽绒服 男 HWRAJ3R058A 米白B3 175/92A/L 甄选鹅绒，轻松御寒，回弹比鸭绒更好，更好的舒适性，更轻的感觉！</p>
+                            <div style="margin-left: 20%">
+                                <a href="#" class="btn btn-warning" ><span class="glyphicon glyphicon-star"></span>&nbsp;加入心愿</a>
+                                <a href="#" class="btn btn-danger" >加入购物车</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="card" style="width: 20rem;">
+                        <img src="../pic/sp-10.png" class="card-img-top" width="150" height="200">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="#" style="color: #0b2e13">耐克 NIKE 男子慢跑长裤</a></h5>
+                            <h5 style="text-align: right;color: red">价格: <b>¥ 330 </b>&nbsp;&nbsp;</h5>
+                            <p class="card-text">耐克 NIKE SW TECH FLEECE 男子慢跑长裤运动裤收口束脚 黑 L  12.12年终盛典；领券满300减60/满600减120/满900减180，活动时间：12月12日，速来抢购！</p>
+                            <div style="margin-left: 20%">
+                                <a href="#" class="btn btn-warning" ><span class="glyphicon glyphicon-star"></span>&nbsp;加入心愿</a>
+                                <a href="#" class="btn btn-danger" >加入购物车</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="card" style="width: 20rem;">
+                        <img src="../pic/sp-11.png" class="card-img-top" width="150" height="200">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="#" style="color: #0b2e13">NIKE PEGASUS 35 男跑步鞋</a></h5>
+                            <h5 style="text-align: right;color: red">价格: <b>¥ 469 </b>&nbsp;&nbsp;</h5>
+                            <p class="card-text">  耐克 NIKE AIR ZOOM PEGASUS 35 男子跑步鞋运动鞋  43 Zoom气垫超级缓震，更轻更快助力你的冬季长跑！ 12.12年终盛典，12.4预售开启  ，12.12支付尾款！</p>
+                            <div style="margin-left: 20%">
+                                <a href="#" class="btn btn-warning" ><span class="glyphicon glyphicon-star"></span>&nbsp;加入心愿</a>
+                                <a href="#" class="btn btn-danger" >加入购物车</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="card" style="width: 20rem;">
+                        <img src="../pic/sp-12.png" class="card-img-top" width="150" height="200">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="#" style="color: #0b2e13">三只松鼠坚果大礼包1419g</a></h5>
+                            <h5 style="text-align: right;color: red">价格: <b>¥ 59 </b>&nbsp;&nbsp;</h5>
+                            <p class="card-text">【满300减210】三只松鼠坚果大礼包1419g碧根果夏威夷果混合坚果年货礼盒休闲零食一整箱送女友. 1419g 【三只松鼠·12.12狂欢开启~】神券爆发，先领券满减，满300减210</p>
+                            <div style="margin-left: 20%">
+                                <a href="#" class="btn btn-warning" ><span class="glyphicon glyphicon-star"></span>&nbsp;加入心愿</a>
+                                <a href="#" class="btn btn-danger" >加入购物车</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--结束部分-->
+            <div class="row" >
+                <div class="col-xl-12" style="margin-left: 40%">
+                    <br/>
+                    <h5 style="color: #4e555b">更多星选继续下滑！</h5>
+                    <div class="spinner-grow text-primary" role="status" style="margin-left: -40px">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                    <div class="spinner-grow text-secondary" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                    <div class="spinner-grow text-success" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                    <div class="spinner-grow text-danger" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                    <div class="spinner-grow text-warning" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                    <div class="spinner-grow text-info" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                    <div class="spinner-grow text-dark" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <!--商品卡片模板--><!--
+            <div class="col-xl-3">
+                    <div class="card" style="width: 20rem;">
+                        <img src="../pic/sp-2.png" class="card-img-top" width="150" height="200">
+                        <div class="card-body">
+                            <h5 class="card-title"><a href="#" style="color: #0b2e13">商品名称</a></h5>
+                            <h5 style="text-align: right;color: red">价格: <b>¥ xxxx </b>&nbsp;&nbsp;</h5>
+                            <p class="card-text"> 商品描述</p>
+                            <div style="margin-left: 20%">
+                                <a href="#" class="btn btn-warning" ><span class="glyphicon glyphicon-star"></span>&nbsp;加入心愿</a>
+                                <a href="#" class="btn btn-danger" >加入购物车</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            -->
+
+
     </div>
-
-    <!--导航 轮播展示 公告-->
-    <div class="row">
-        <!--左侧导航-->
-        <div class="col-xl-2" >
-            <div  class="bbs" role="navigation" aria-label="左侧导航" style="">
-            <ul >
-                <li  class="cate_menu_item" data-index="1" >
-                    <a target="_blank" class="cate_menu_lk" href="#">家用电器</a>
-                </li>
-                <li class="cate_menu_item" data-index="2" >
-                    <a target="_blank" class="cate_menu_lk" href="#">手机</a>
-                    <span class="cate_menu_line">/</span>
-                    <a target="_blank" class="cate_menu_lk" href="#">数码</a>
-                </li>
-                <li  class="cate_menu_item" data-index="3">
-                    <a target="_blank" class="cate_menu_lk" href="#">电脑</a>
-                    <span class="cate_menu_line">/</span>
-                    <a target="_blank" class="cate_menu_lk" href="#">办公</a>
-                </li>
-                <li class="cate_menu_item" data-index="4" >
-                    <a target="_blank" class="cate_menu_lk" href="#">家居</a>
-                    <span class="cate_menu_line">/</span>
-                    <a target="_blank" class="cate_menu_lk" href="#">家装</a>
-                    <span class="cate_menu_line">/</span>
-                    <a target="_blank" class="cate_menu_lk" href="#">厨具</a>
-                </li>
-                <li class="cate_menu_item" data-index="5" >
-                    <a target="_blank" class="cate_menu_lk" href="#">男装</a>
-                    <span class="cate_menu_line">/</span>
-                    <a target="_blank" class="cate_menu_lk" href="#">女装</a>
-                    <span class="cate_menu_line">/</span>
-                    <a target="_blank" class="cate_menu_lk" href="#">童装</a>
-                    <span class="cate_menu_line">/</span>
-                    <a target="_blank" class="cate_menu_lk" href="#">内衣</a>
-                </li>
-                <li class="cate_menu_item" data-index="6" >
-                    <a target="_blank" class="cate_menu_lk" href="#">美妆</a>
-                    <span class="cate_menu_line">/</span>
-                    <a target="_blank" class="cate_menu_lk" href="#">个护清洁</a>
-                    <span class="cate_menu_line">/</span>
-                    <a target="_blank" class="cate_menu_lk" href="#">宠物</a>
-                </li>
-                <li class="cate_menu_item" data-index="7" >
-                    <a target="_blank" class="cate_menu_lk" href="#">女鞋</a>
-                    <span class="cate_menu_line">/</span>
-                    <a target="_blank" class="cate_menu_lk" href="#">箱包</a>
-                    <span class="cate_menu_line">/</span>
-                    <a target="_blank" class="cate_menu_lk" href="#">钟表</a>
-                    <span class="cate_menu_line">/</span>
-                    <a target="_blank" class="cate_menu_lk" href="#">珠宝</a>
-                </li>
-                <li class="cate_menu_item" data-index="8" >
-                    <a target="_blank" class="cate_menu_lk" href="#">男鞋</a>
-                    <span class="cate_menu_line">/</span>
-                    <a target="_blank" class="cate_menu_lk" href="#">运动</a>
-                    <span class="cate_menu_line">/</span>
-                    <a target="_blank" class="cate_menu_lk" href="#">户外</a>
-                </li>
-                <li class="cate_menu_item" data-index="9" >
-                    <a target="_blank" class="cate_menu_lk" href="#">汽车</a>
-                    <span class="cate_menu_line">/</span>
-                    <a target="_blank" class="cate_menu_lk" href="#">汽车用品</a>
-                </li>
-                <li class="cate_menu_item" data-index="10" >
-                    <a target="_blank" class="cate_menu_lk" href="#">母婴</a>
-                    <span class="cate_menu_line">/</span>
-                    <a target="_blank" class="cate_menu_lk" href="#">玩具乐器</a>
-                </li>
-                <li class="cate_menu_item" data-index="11" >
-                    <a target="_blank" class="cate_menu_lk" href="#">食品</a>
-                    <span class="cate_menu_line">/</span>
-                    <a target="_blank" class="cate_menu_lk" href="#">酒类</a>
-                    <span class="cate_menu_line">/</span>
-                    <a target="_blank" class="cate_menu_lk" href="#">生鲜</a>
-                    <span class="cate_menu_line">/</span>
-                    <a target="_blank" class="cate_menu_lk" href="#">特产</a>
-                </li>
-                <li class="cate_menu_item" data-index="12" >
-                    <a target="_blank" class="cate_menu_lk" href="#">艺术</a>
-                    <span class="cate_menu_line">/</span>
-                    <a target="_blank" class="cate_menu_lk" href="#">礼品鲜花</a>
-                    <span class="cate_menu_line">/</span>
-                    <a target="_blank" class="cate_menu_lk" href="#">绿植</a>
-                </li>
-                <li class="cate_menu_item" data-index="13" >
-                    <a target="_blank" class="cate_menu_lk" href="#">医药保健</a>
-
-                </li>
-                <li class="cate_menu_item" data-index="14" >
-                    <a target="_blank" class="cate_menu_lk" href="#">图书</a>
-                    <span class="cate_menu_line">/</span>
-                    <a target="_blank" class="cate_menu_lk" href="#">文娱</a>
-                    <span class="cate_menu_line">/</span>
-                    <a target="_blank" class="cate_menu_lk" href="#">教育</a>
-                    <span class="cate_menu_line">/</span>
-                    <a target="_blank" class="cate_menu_lk" href="#">电子书</a>
-                </li>
-                <li class="cate_menu_item" data-index="15" >
-                    <a target="_blank" class="cate_menu_lk" href="#">机票</a>
-                    <span class="cate_menu_line">/</span>
-                    <a target="_blank" class="cate_menu_lk" href="#">酒店</a>
-                    <span class="cate_menu_line">/</span>
-                    <a target="_blank" class="cate_menu_lk" href="#">旅游</a>
-                    <span class="cate_menu_line">/</span>
-                    <a target="_blank" class="cate_menu_lk" href="#">生活</a>
-                </li>
-                <li class="cate_menu_item" data-index="16" >
-                    <a target="_blank" class="cate_menu_lk" href="#">理财</a>
-                    <span class="cate_menu_line">/</span>
-                    <a target="_blank" class="cate_menu_lk" href="#">众筹</a>
-                    <span class="cate_menu_line">/</span>
-                    <a target="_blank" class="cate_menu_lk" href="#">保险</a>
-                </li>
-                <li class="cate_menu_item" data-index="17" >
-                    <a target="_blank" class="cate_menu_lk" href="#">安装</a>
-                    <span class="cate_menu_line">/</span>
-                    <a target="_blank" class="cate_menu_lk" href="#">维修</a>
-                    <span class="cate_menu_line">/</span>
-                    <a target="_blank" class="cate_menu_lk" href="#">清洗</a>
-                    <span class="cate_menu_line">/</span>
-                    <a target="_blank" class="cate_menu_lk" href="#">二手</a>
-                </li>
-
-            </ul>
-            </div>
-           <!--
-            <div class="list-group" id="list-tab" role="tablist" style="margin-left:-20px;margin-right: -30px; ">
-                <a class="list-group-item list-group-item-action" id="list-home-list" data-toggle="list" href="#" role="tab" >Home</a>
-                <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#" role="tab" >Profile</a>
-                <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#" role="tab" >Messages</a>
-                <a class="list-group-item list-group-item-action" id="list-settings-lis" data-toggle="list" href="#" role="tab" >Settings</a>
-                <a class="list-group-item list-group-item-action" id="list-settings-li" data-toggle="list" href="#" role="tab" >Settings</a>
-                <a class="list-group-item list-group-item-action" id="list-settings-l" data-toggle="list" href="#" role="tab" >Settings</a>
-                <a class="list-group-item list-group-item-action" id="list-setting" data-toggle="list" href="#" role="tab" >Settings</a>
-                <a class="list-group-item list-group-item-action" id="list-settin" data-toggle="list" href="#" role="tab" >Settings</a>
-                <a class="list-group-item list-group-item-action" id="list-setti" data-toggle="list" href="#" role="tab" >Settings</a>
-            </div>-->
-
-
-        </div>
-        <!--轮播区域-->
-        <div class="col-xl-8">
-            <div class="banner" >
-                <div class="img-wrap">
-                    <ul>
-                        <li class="item" style="display: block">
-                            <img src="../pic/hb1.jpg" alt="" class="lunbo"></a>
-                        </li>
-                        <li class="item">
-                            <img src="../pic/hb2.jpg" alt="" class="lunbo"></a>
-                        </li>
-                        <li class="item">
-                            <img src="../pic/hb3.jpg" alt="" class="lunbo"></a>
-                        </li>
-                        <li class="item">
-                           <img src="../pic/hb4.jpg" alt="" class="lunbo"></a>
-                        </li>
-
-                    </ul>
-                </div>
-                <div class="lr-tab">
-                    <div class="left btn"></div>
-                    <div class="right btn"></div>
-                </div>
-
-            </div>
-        </div>
-        <!--公共/广告位-->
-        <div class="col-xl-2">
-            <h2>广告位招租！！！！</h2>
-        </div>
-    </div>
-    <!--秒杀栏目-->
-        <div class="row" style="margin-top: 10px;">
-            <div class="col-xl-1">
-
-            </div><!--占位-->
-            <!--秒杀商品展示区域-->
-            <div class="col-xl-10 d-inline-flex p-3 ">
-                <div class="flashsale-countdown rainbow-item-1 span1">
-                <div class="round" style="margin-bottom: 5px ;margin-top: -15px">秒杀22:00 场</div>
-                <img src="../pic/sd.svg" width="34" height="53" style="margin-top: 15px;margin-bottom: 15px;" alt="闪购">
-                <div class="desc">距离开始还有</div>
-                <div class="countdown">
-                    <span class="spann" id="shi">00</span>
-                    <i id="i1">:</i>
-                    <span class="spann" id="fen">00</span>
-                    <i id="i2">:</i>
-                    <span class="spann" id="miao">00</span>
-                    <h4 hidden="ture" id="kaishi">开始抢购了！</h4>
-                </div>
-                </div>
-
-                <div class="flashsale-countdown rainbow-item-2 span1">
-                    <div class="round" style="margin-bottom: 5px ;margin-top: -15px;margin-right: 15px;margin-left: 15px;color: #4e555b;font-size: 15px;">耐克NIKE ZOOM WINFLO-6 运动鞋 黑42码 </div>
-                    <img src="../pic/ms-1.png" width="100" height="100" alt="Nike">
-                    <div class="desc bianju">秒杀价格: <b>¥ 299 </b>&nbsp;&nbsp;原价：<del style="color: red;">799</del></div>
-                    <div class="countdown">
-                        <button class="btn btn-danger qdbtn " disabled="disabled">立即抢购</button>
-                    </div>
-                </div>
-                <div class="flashsale-countdown rainbow-item-3 span1">
-                    <div class="round" style="margin-bottom: 5px ;margin-top: -15px;margin-right: 15px;margin-left: 15px;color: #4e555b;font-size: 15px;">小米Air 2019款 笔记本 4G 128G 全高清屏</div>
-                    <img src="../pic/ms-2.png" width="100" height="100" alt="Nike">
-                    <div class="desc bianju">秒杀价格: <b>¥ 2999 </b>&nbsp;&nbsp;原价：<del style="color: red;">3699</del></div>
-                    <div class="countdown">
-                        <button class="btn btn-danger qdbtn"  disabled="disabled">立即抢购</button>
-                    </div>
-                </div>
-                <div class="flashsale-countdown rainbow-item-4 span1">
-                    <div class="round" style="margin-bottom: 5px ;margin-top: -15px;margin-right: 15px;margin-left: 15px;color: #4e555b;font-size: 15px;">华为nova 6 5G  麒麟990芯片 8GB+128GB 全网通</div>
-                    <img src="../pic/ms-3.png" width="100" height="100" alt="Nike">
-                    <div class="desc bianju">秒杀价格: <b>¥ 2899 </b>&nbsp;&nbsp;原价：<del style="color: red;">3799</del></div>
-                    <div class="countdown">
-                        <button class="btn btn-danger qdbtn" disabled="disabled">立即抢购</button>
-                    </div>
-                </div>
-                <div class="flashsale-countdown rainbow-item-5 span1">
-                    <div class="round" style="margin-bottom: 5px ;margin-top: -15px;margin-right: 15px;margin-left: 15px;color: #4e555b;font-size: 15px;">索尼（SONY） 32英寸 高清液晶平板电视 </div>
-                    <img src="../pic/ms-4.png" width="100" height="100" alt="Nike">
-                    <div class="desc bianju">秒杀价格: <b>¥ 999 </b>&nbsp;&nbsp;原价：<del style="color: red;">1599</del></div>
-                    <div class="countdown">
-                        <button class="btn btn-danger qdbtn" disabled="disabled">立即抢购</button>
-                    </div>
-                </div>
-                <div class="flashsale-countdown rainbow-item-6 span1">
-                    <div class="round" style="margin-bottom: 5px ;margin-top: -15px;margin-right: 15px;margin-left: 15px;color: #4e555b;font-size: 15px;"> 蒙牛 特仑苏 纯牛奶 250ml*16 礼盒装  </div>
-                    <img src="../pic/ms-5.png" width="100" height="100" alt="Nike">
-                    <div class="desc bianju">秒杀价格: <b>¥ 49 </b>&nbsp;&nbsp;原价：<del style="color: red;">79</del></div>
-                    <div class="countdown">
-                        <button class="btn btn-danger qdbtn" disabled="disabled">立即抢购</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-xl-1"> </div><!--占位-->
-        </div>
-    <!--商品展示栏目-->
-        <div class="row" style="margin-left: 1%">
-            <div class="col-xl-3" >
-                <div class="card" style="width: 20rem;" >
-                    <img src="../pic/sp-1.png" class="card-img-top" width="150" height="200">
-                    <div class="card-body">
-                        <h5 class="card-title">康佳 58英寸 平板液晶电视机</h5>
-                        <h5 style="text-align: right;color: red">价格: <b>¥ 2499 </b>&nbsp;&nbsp;</h5>
-                        <p class="card-text">康佳（KONKA）LED58D6 58英寸 AI人工智能 2GB+16GB内存 4K超高清 全民K歌 网络平板液晶电视机 【画质清晰不卡顿】同价位电视，这款电视内存更大！2+16G大内存快速运行！</p>
-                        <a href="#" class="btn btn-danger">加入购物车</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3">
-                <div class="card" style="width: 20rem;">
-                    <img src="../pic/sp-2.png" class="card-img-top" width="150" height="200">
-                    <div class="card-body">
-                        <h5 class="card-title">海信 55英寸 人工智能电视机</h5>
-                        <h5 style="text-align: right;color: red">价格: <b>¥ 2299 </b>&nbsp;&nbsp;</h5>
-                        <p class="card-text"> 海信（Hisense）HZ55E3D 55英寸 无边全面屏 AI语音 4K HDR 智慧语音 人工智能电视机
-                           全面屏语音电视，纤薄机身，智慧遥控，运行流畅不卡顿，丰富影视资源！咨询客服加送180天延保</p>
-                        <a href="#" class="btn btn-danger">加入购物车</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3">
-                <div class="card" style="width: 20rem;">
-                    <img src="../pic/sp-3.png" class="card-img-top" width="150" height="200">
-                    <div class="card-body">
-                        <h5 class="card-title">小米电视4A 55英寸 智能电视</h5>
-                        <h5 style="text-align: right;color: red">价格: <b>¥ 1755 </b>&nbsp;&nbsp;</h5>
-                        <p class="card-text">  小米电视4A 55英寸 4K超高清HDR 蓝牙语音 2GB+8GB人工智能语音网络液晶平板电视，老人小孩都会用的电视机！
-                            RedmiK30新品盲约开启，预约王一博同款手机即可抽奖赢手机!!!</p>
-                        <a href="#" class="btn btn-danger">加入购物车</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3">
-                <div class="card" style="width: 20rem;">
-                    <img src="../pic/sp-4.png" class="card-img-top" width="150" height="200">
-                    <div class="card-body">
-                        <h5 class="card-title">乐视（Letv）超级电视 55英寸</h5>
-                        <h5 style="text-align: right;color: red">价格: <b>¥ 1599 </b>&nbsp;&nbsp;</h5>
-                        <p class="card-text"> 乐视（Letv）超级电视 Y55C 55英寸 1.5GB+16GB大存储 窄边框4K超高清人工智能超薄网络液晶平板电视机
-                            【9号劲爆1399元限量秒杀！】 【55英寸大屏互动智能追剧！画质还原本质】 </p>
-                        <a href="#" class="btn btn-danger">加入购物车</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
     <!--Jquery区域-->
-    </div>
-
     <!--js实现部分-->
     <script type="text/javascript">
         //JS实现轮播********************************************************************************************************************
