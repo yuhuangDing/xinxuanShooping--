@@ -191,3 +191,113 @@ ul{
     margin-top: 15px;
     margin-bottom: -5px;
 }
+
+
+
+/*购物车列表CSS*/
+.list-head {
+    height: 70px;
+    line-height: 70px;
+    padding-right: 26px;
+    color:
+            #424242;
+}
+.coll {
+    float: left;
+}
+.col-check {
+    width: 110px;
+}
+
+.col-img {
+    width: 120px;
+}
+.col-check {
+    width: 110px;
+}
+.col-name {
+    width: 380px;
+}
+.col-name-in {
+    width: 380px;
+}
+.col-price {
+    width: 140px;
+    padding-right: 18px;
+    text-align: center;
+    color:
+            #424242;
+}
+.col-num {
+    width: 180px;
+    text-align: center;
+    color:
+            #424242;
+}
+.col-total {
+      width: 120px;
+      padding-right: 60px;
+      text-align: right;
+  }
+.col-action {
+    width: 80px;
+    text-align: center;
+}
+.cart-goods-list {
+     background-color:
+             #f7f7f7;
+ }
+.icon-checkbox-selected {
+    color:
+            #fff;
+    border-color:
+            #ff6700;
+    background-color:
+            #ff6700;
+}
+.icon-checkbox {
+    display: inline-block;
+    *zoom: 1;
+    *display: inline;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    border: 1px solid
+    #e0e0e0;
+    border-top-color: rgb(224, 224, 224);
+    border-right-color: rgb(224, 224, 224);
+    border-bottom-color: rgb(224, 224, 224);
+    border-left-color: rgb(224, 224, 224);
+    margin-left: 24px;
+    background-color: #fff;
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+    cursor: pointer;
+}
+.cinput {
+
+    width: 72px;
+    height: 30px;
+    float: top;
+    padding: 0;
+    border-width: 0;
+    color:
+            #424242;
+    font-size: 16px;
+    text-align: center;
+}
+.change-goods-num {
+    width: 148px;
+    height: 38px;
+    margin-top: 20px;
+   border: 1px solid
+    #e0e0e0;
+    text-align: center;
+
+    position: relative;
+
+}

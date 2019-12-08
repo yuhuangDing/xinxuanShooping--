@@ -43,6 +43,141 @@
 
 </nav>
     <!--购物车主体部分-->
+    <div class="container-fluid">
+        <!-- 购物车标题部分-->
+        <div class="row">
+            <div class="col-xl-10">
+                <h1 style="margin-left: 2%;margin-top:10px; margin-bottom:10px;color: #4e555b">我的购物车</h1>
+            </div>
+            <div class="col-xl-2">
+                <h5 style="text-align: right ;margin-top: 35px"><a href="#" style="color: #fd7e14"><span class="glyphicon glyphicon-list-alt"></span> 我的订单</a></h5>
+            </div>
+        </div>
+        <!--分割线--->
+        <div class="row"><div class="col-xl-12"> <div style="margin-bottom: 8px;border:2px solid #CCC"></div></div> </div>
 
+        <!--购物车主要列表部分-->
+        <div class="row">
+            <div class="col-xl-10" style="margin-left: 8%">
+                <div class="cart-goods-list list-head ">
+                    <div class="coll col-check">
+                        <i class=" iconfont" style="margin-left: 15px">&nbsp;</i>选择
+                    </div>
+                    <div class="coll col-img">&nbsp;</div>
+                    <div class="coll col-name">商品名称</div>
+                    <div class="coll col-price">单价</div>
+                    <div class="coll col-num">数量</div>
+                    <div class="coll col-total">小计</div>
+                    <div class="coll col-action">操作</div>
+                </div>
+            </div>
+
+            <div class="col-xl-10" style="margin-left: 8%">
+                <div class="cart-goods-list list-head " style="height: 120px;padding-top: 25px">
+                    <div class="coll col-check">
+                        <input class="icon-checkbox iconfont form-check-input" type="checkbox" value="" id="defaultCheck1">
+
+                    </div>
+                    <div class="coll col-img"><img src="../pic/sp-6.png" width="120px" height="70px"></div>
+                    <div class="coll col-name-in"><small>三星 SAMSUNG Galaxy Fold 折叠屏 量子黑 12GB+512GB</small></div>
+                    <div class="coll col-price" >￥<b id="nowprice">15999.00</b></div>
+                    <div class="coll col-num">
+                        <div class="change-goods-num" style="margin-left: 15px">
+                            <div style="margin-top: -16px ">
+                                <a  class="J_plus"><span class="glyphicon glyphicon-plus"></span></a>
+                                <input tyep="text"  value="1"  autocomplete="off"  class="cinput">
+                                <a class="J_minus"><span class="glyphicon glyphicon-minus" ></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coll col-total" >￥<b id="summoney">15999.00</b></div>
+                    <div class="coll col-action"><a class="delete"><span class="glyphicon glyphicon-remove" ></span></a></div>
+                </div>
+            </div>
+
+            <!--商品列表模板
+            <div class="col-xl-10" style="margin-left: 8%">
+                <div class="cart-goods-list list-head " style="height: 120px;padding-top: 25px">
+                    <div class="coll col-check">
+                        <input class="icon-checkbox iconfont form-check-input" type="checkbox" value="" id="defaultCheck1">
+
+                    </div>
+                    <div class="coll col-img"><img src="../pic/sp-6.png" width="120px" height="70px"></div>
+                    <div class="coll col-name-in"><small>三星 SAMSUNG Galaxy Fold 折叠屏 量子黑 12GB+512GB</small></div>
+                    <div class="coll col-price" >￥<b id="nowprice">15999.00</b></div>
+                    <div class="coll col-num">
+                        <div class="change-goods-num" style="margin-left: 15px">
+                            <div style="margin-top: -16px ">
+                                <a  class="J_plus"><span class="glyphicon glyphicon-plus"></span></a>
+                                <input tyep="text"  value="1"  autocomplete="off"  class="cinput">
+                                <a class="J_minus"><span class="glyphicon glyphicon-minus" ></span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="coll col-total" >￥<b id="summoney">15999.00</b></div>
+                    <div class="coll col-action"><a class="delete"><span class="glyphicon glyphicon-remove" ></span></a></div>
+                </div>
+            </div>
+            -->
+        </div>
+
+        <br/><div style="height: 300px"> </div>
+        <!--分割线--->
+        <div class="row"><div class="col-xl-12"> <div style="margin-bottom: 8px;border:2px solid #CCC;"></div></div> </div>
+        <div class="row">
+            <div style="width: 80%;height: 50px;background: #f7f7f7;margin-left: 5%">
+                <div class="container" style="margin-left: 9%">
+                    <div class="row" style="margin-top: 5px">
+                        <div class="col-xl-2"><a href="index.html" style="color: #4e555b;margin-left: -30%">继续购物</a></div>
+                        <div class="col-xl-6"> </div>
+                        <div class="col-xl-4">
+                            <div>
+                                <h4 style="color: #fd7e14;margin-left: 10px"> 合计：<b id="summoney1">15999.00</b>元</h4>
+                                <button class="btn btn-warning" style="margin-top: -65px;margin-left: 250px" >去结算</button></div>
+                            </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <script>
+        /*********价格计算*********************************************************************************************/
+        var t = $(".cinput");
+        var m = $("#summoney").text();
+        var mm = $("#summoney");
+        var m1 = $("#summoney1").text();
+        var mm1 = $("#summoney1");
+        function updateMoney(){
+            var tt = t.val();
+            var total =  m*tt;   //输入框中的份额数与每份金额数相乘得到总金额
+            mm.text(total);
+            mm1.text(total);
+            if(t.val()<=0){
+                mm.text(m);
+                mm1.text(m);
+            }
+        }
+        $(function plus(){
+            var t=$(".cinput");
+            $(".J_plus").click(function() {
+                t.val(parseInt(t.val()) + 1); //点击加号输入框数值加1
+                updateMoney();  //显示总金额
+            });})
+        $(function minnum(){
+            var t=$(".cinput");
+            $(".J_minus").click(function() {
+                t.val(parseInt(t.val())-1); //点击减号输入框数值减1
+
+                if(t.val()<=0){
+                    t.val(parseInt(t.val())+1); //最小值为1
+                }
+
+                updateMoney();  //显示总金额
+            });})
+
+    </script>
 </body>
 </html>
