@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4e0737e4-9513-463d-9f0e-27a34780d01f" name="Default Changelist" comment="">
+    <list default="true" id="4e0737e4-9513-463d-9f0e-27a34780d01f" name="Default Changelist" comment="--Build 1.0 修复页面布局错误&#10;--Build 1.1 首页布局完成&#10;--Build 1.2 新增购物车页面,已完成">
+      <change afterPath="$PROJECT_DIR$/html/Order.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/myCss.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/myCss.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/myShoppingCart.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/myShoppingCart.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +91,8 @@
       <workItem from="1575366114969" duration="13061000" />
       <workItem from="1575448902009" duration="17620000" />
       <workItem from="1575720452240" duration="8197000" />
-      <workItem from="1575772622293" duration="19001000" />
+      <workItem from="1575772622293" duration="20792000" />
+      <workItem from="1575970974808" duration="1966000" />
     </task>
     <task id="LOCAL-00001" summary="‘demo01">
       <created>1575720847480</created>
@@ -149,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575785504810</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="--Build 1.0 修复页面布局错误&#10;--Build 1.1 首页布局完成&#10;--Build 1.2 新增购物车页面,已完成">
+      <created>1575794655761</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1575794655761</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -172,17 +180,18 @@
     <MESSAGE value="修复页面布局错误&#10;--1.0 首页完成" />
     <MESSAGE value="修复页面布局错误&#10;--1.0 首页完成&#10;--1.1 新增购物车页面" />
     <MESSAGE value="--Build 1.0 修复页面布局错误&#10;--Build 1.1 首页布局完成&#10;--Build 1.2 新增购物车页面" />
-    <option name="LAST_COMMIT_MESSAGE" value="--Build 1.0 修复页面布局错误&#10;--Build 1.1 首页布局完成&#10;--Build 1.2 新增购物车页面" />
+    <MESSAGE value="--Build 1.0 修复页面布局错误&#10;--Build 1.1 首页布局完成&#10;--Build 1.2 新增购物车页面,已完成" />
+    <option name="LAST_COMMIT_MESSAGE" value="--Build 1.0 修复页面布局错误&#10;--Build 1.1 首页布局完成&#10;--Build 1.2 新增购物车页面,已完成" />
   </component>
   <component name="WindowStateProjectService">
     <state x="223" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1575341772317">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="223" y="70" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1575341772317" />
-    <state x="385" y="0" key="CommitChangelistDialog2" timestamp="1575785504085">
+    <state x="385" y="0" key="CommitChangelistDialog2" timestamp="1575814565093">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="385" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1575785504085" />
+    <state x="385" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1575814565093" />
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1575780650002">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
