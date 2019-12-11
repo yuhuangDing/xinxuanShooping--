@@ -28,9 +28,7 @@
         </div>
         <!--收货地址信息部分-->
         <div class="row">
-            <div class="col-xl-2">
-                占位
-            </div>
+            <div class="col-xl-2"> 占位</div>
             <div class="col-xl-8">
                 <div style="background: #fdfdfe ;width: 100%;height: 900px;margin-top: 2%" >
                     <div>
@@ -41,7 +39,7 @@
                     <div  class="container">
                         <div class="row">
                             <div class="col-xl-3">
-                                <div class="card" style="width: 25rem">
+                                <div class="card" style="width: 20rem">
                                     <div class="card-body" style="margin-bottom: -15px;">
                                         <p>收货人 ：DEMO</p>
                                         <p>地址：广东省 惠州市 惠城区 惠州学院</p>
@@ -64,8 +62,9 @@
                     </div>
                     <!--商品总结算列表-->
                     <div style="margin-top: 10px;margin-bottom: 10px;"><br/></div>
-                    <div><h5>商品及优惠</h5></div>
+                    <!--详细信息部分-->
                     <div class="container-fluid">
+                        <div><h5>商品及优惠</h5></div>
                         <div style="margin-bottom: 8px;border:1px solid #CCC"></div>
                         <div class="row" style="margin-top: 20px">
                             <div class="col-xl-1"></div>
@@ -88,29 +87,98 @@
                         </div>
                         <!--配送选择-->
                         <div style="margin-bottom: 8px;border:1px solid #CCC;margin-top: 15px"></div>
-                        <div class="row">
-                            <div><h5>配送方式</h5></div>
-                            
+                        <div class="row" style="color: #fd7e14;margin-top: 20px;margin-bottom: 20px ">
+                            <div class="col-xl-2" style="color:black">
+                                <div><h5>配送方式</h5></div>
+                            </div>
+                            <div class="col-xl-2">
+                                <div class="radio">
+                                    <label><input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked> 包邮</label>
+                                </div>
+                            </div>
+                            <div class="col-xl-2">
+                                <div class="radio">
+                                    <label><input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">自提</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="margin-bottom: 8px;border:1px solid #CCC;margin-top: 10px"></div>
+
+                        <!--发票选择-->
+                        <div class="row" style="margin-top: 20px;margin-bottom: 20px">
+                            <div class="col-xl-2"><h5>发票</h5></div>
+                            <div class="col-xl-2" >
+                                <div class="input-group" style="width: 120px">
+                                    <select class="custom-select" id="inputGroupSelect01">
+                                        <option selected>纸质发票</option>
+                                        <option value="1">电子发票</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-xl-2" >
+                                <div class="input-group" style="width: 120px">
+                                    <select class="custom-select" id="inputGroupSelect02">
+                                        <option selected>个人</option>
+                                        <option value="1">单位</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-xl-2" style="color: #fd7e14">
+                                <small>发票将会标注商品明细</small>
+                            </div>
                         </div>
 
 
-
-
-
+                        <div class="row" style="margin-top: 40px;">
+                            <div class="col-xl-3">
+                                <p><a style="color: #fd7e14" href="javascript:useyh()" ><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;使用优惠券</a></p>
+                                <p><a style="color: #fd7e14"  href="javascript:useyh()" ><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;使用礼品卡</a></p>
+                            </div>
+                        </div>
                     </div>
-
-
-
                 </div>
             </div>
-            <div class="col-xl-2">
-                占位
+
+
+            <div class="col-xl-2">占位
+
+            </div>
+        </div>
+    </div>
+
+    <div id="yhdiv"  style="width: 300px;height: 200px;background: #86cfda;border-radius: 6px;margin-left: 500px;margin-bottom: 600px;float: top;display:none">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xl-12">
+                    <h4 style="text-align: center;margin-top: 10px">使用优惠券或礼品卡</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-12" style="margin-top: 10px">
+                    <label>请输入16位礼品卡卡号或优惠券券码</label>
+                    <input type="text" class="form-control">
+                </div>
+            </div>
+            <div class="row" style="margin-top: 20px;text-align: right">
+                <div class="col-xl-12">
+                    <button class="btn btn-danger" type="submit">确认</button>
+                    <button class="btn btn-dark" onclick="closeyh()">取消</button>
+                </div>
             </div>
         </div>
 
-
-
     </div>
+    <script>
+        function useyh() {
+            $("#yhdiv").attr("style","display:inline");
+        }
+        function uselpk() {
+            $("#yhdiv").attr("style","display:inline");
+        }
+        function closeyh(){
+            $("#yhdiv").attr("style","display:none");
+        }
+    </script>
 
 </body>
 </html>
