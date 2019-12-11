@@ -12,8 +12,7 @@
     <div class="container-fluid">
         <!---logo标题部分-->
         <div class="row" >
-            <div class="col-xl-1"></div>
-            <div class="col-xl-2">
+            <div class="col-xl-2" style="margin-left: 5%;margin-top: 10px;margin-bottom: 10px;">
                 <a  >
                     <img src="../pic/logo.png" width="70" height="70" class="d-inline-block align-top" alt="">
                     <h2 style="margin-top: -15%;margin-left: 35%;color: #4e555b">确认订单</h2>
@@ -28,12 +27,12 @@
         </div>
         <!--收货地址信息部分-->
         <div class="row">
-            <div class="col-xl-2"> 占位</div>
+            <div class="col-xl-2"> </div>
             <div class="col-xl-8">
-                <div style="background: #fdfdfe ;width: 100%;height: 900px;margin-top: 2%" >
+                <div style="background: #fdfdfe ;width: 100%;height: 850px;margin-top: 2%" >
                     <div>
                         <h5 >确认地址</h5>
-                        <div style="margin-bottom: 8px;border:2px solid #CCC"></div>
+                        <div style="margin-bottom: 8px;border:1px solid #CCC"></div>
                     </div>
                     <!---收获地址模块-->
                     <div  class="container">
@@ -74,14 +73,14 @@
                             <div class="col-xl-4">
                             <p> <small>三星 SAMSUNG Galaxy Fold 折叠屏 量子黑 12GB+512GB</small></p>
                             </div>
-                            <div class="col-xl-2">
+                            <div class="col-xl-2" >
                                 15999.00 x 1
                             </div>
                             <div class="col-xl-2">
 
                             </div>
                             <div class="col-xl-2">
-                                <p style="color: orange">15999.00元</p>
+                                <p style="color: orange" ><b id="y-yj" >15999.00</b>&nbsp;元</p>
                             </div>
 
                         </div>
@@ -130,9 +129,49 @@
 
 
                         <div class="row" style="margin-top: 40px;">
-                            <div class="col-xl-3">
+                            <div class="col-xl-4">
                                 <p><a style="color: #fd7e14" href="javascript:useyh()" ><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;使用优惠券</a></p>
                                 <p><a style="color: #fd7e14"  href="javascript:useyh()" ><span class="glyphicon glyphicon-plus-sign"></span>&nbsp;使用礼品卡</a></p>
+                                <div id="yhjm1" style="display: none" >
+                                    <p> 使用优惠券/礼品卡优惠：<b id="yhjm2" style="color: orange;">0</b>&nbsp; 元</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="row">
+                                <div id="yhdiv"  style="width: 300px;height: 200px;background: #86cfda;border-radius: 6px;margin-left: 500px;margin-bottom: 600px;float: top;display:none">
+                                    <div class="container-fluid">
+                                        <div class="row">
+                                            <div class="col-xl-12">
+                                                <h4 style="text-align: center;margin-top: 10px">使用优惠券或礼品卡</h4>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xl-12" style="margin-top: 10px">
+                                                <label>请输入16位礼品卡卡号或优惠券券码</label>
+                                                <input type="text" class="form-control" id="yhjm">
+                                            </div>
+                                        </div>
+                                        <div class="row" style="margin-top: 20px;text-align: right">
+                                            <div class="col-xl-12">
+                                                <button class="btn btn-danger" type="submit" onclick="useyhsc()">确认</button>
+                                                <button class="btn btn-dark" onclick="closeyh()">取消</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                        </div>
+                        <div class="row" style="margin-top: -90px">
+                            <div class="col-xl-7"></div>
+                            <div class="col-xl-4" style="margin-left: 70%">
+                                <p><h4 style="color: orange;">合计：</h4></p>
+                                <p>商品原价： <b id="yj"> </b></p>
+                                <p>邮&nbsp;&nbsp;&nbsp;&nbsp;费： <b>0</b> 元</p>
+                                <p>优惠券/礼品卡：<b id="lpk">0</b> 元</p>
+                                <p>合&nbsp;&nbsp;&nbsp;&nbsp;计：<b id="summoneyis"></b> 元</p>
+                                <a style="color: #5a6268;margin-left: -90px;" href="myShoppingCart.html">返回购物车&nbsp;</a>
+                                <button class="btn btn-danger" type="submit" onclick="ordersuccess()" style="padding-left: 80px;padding-right: 80px">结&nbsp;&nbsp;算</button>
                             </div>
                         </div>
                     </div>
@@ -140,45 +179,42 @@
             </div>
 
 
-            <div class="col-xl-2">占位
+            <div class="col-xl-2">
 
             </div>
         </div>
     </div>
 
-    <div id="yhdiv"  style="width: 300px;height: 200px;background: #86cfda;border-radius: 6px;margin-left: 500px;margin-bottom: 600px;float: top;display:none">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-xl-12">
-                    <h4 style="text-align: center;margin-top: 10px">使用优惠券或礼品卡</h4>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-xl-12" style="margin-top: 10px">
-                    <label>请输入16位礼品卡卡号或优惠券券码</label>
-                    <input type="text" class="form-control">
-                </div>
-            </div>
-            <div class="row" style="margin-top: 20px;text-align: right">
-                <div class="col-xl-12">
-                    <button class="btn btn-danger" type="submit">确认</button>
-                    <button class="btn btn-dark" onclick="closeyh()">取消</button>
-                </div>
-            </div>
-        </div>
 
-    </div>
     <script>
         function useyh() {
-            $("#yhdiv").attr("style","display:inline");
-        }
-        function uselpk() {
             $("#yhdiv").attr("style","display:inline");
         }
         function closeyh(){
             $("#yhdiv").attr("style","display:none");
         }
-    </script>
+        function useyhsc(){
+            var yhjm = $("#yhjm").val();
+            $("#yhjm1").attr("style","display:inline");
+            $("#yhjm2").text(yhjm);
+            $("#yhdiv").attr("style","display:none");
+            var lpk=$("#yhjm2").text();
+            $("#lpk").text(lpk);
+            var sum=yj-lpk;
+            $("#summoneyis").text(sum);
+
+
+        }
+
+        var yj=$("#y-yj").text();
+        $("#yj").text(yj);
+        var sum=yj;
+        $("#summoneyis").text(sum);
+        function ordersuccess() {
+            window.location.href="./OrderSuccess.html";//填写跳转页面
+        }
+
+</script>
 
 </body>
 </html>

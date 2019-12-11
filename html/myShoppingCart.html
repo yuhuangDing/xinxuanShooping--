@@ -133,7 +133,7 @@
                         <div class="col-xl-4">
                             <div>
                                 <h4 style="color: #fd7e14;margin-left: 10px"> 合计：<b id="summoney1">15999.00</b>元</h4>
-                                <button class="btn btn-warning" style="margin-top: -65px;margin-left: 250px" >去结算</button></div>
+                                <button class="btn btn-warning" style="margin-top: -65px;margin-left: 250px" onclick="order()">去结算</button></div>
                             </div>
 
                     </div>
@@ -177,7 +177,11 @@
 
                 updateMoney();  //显示总金额
             });})
+    /*******结算按钮****************************************************************************************************/
+    function order() {
+        window.location.href="./Order.html";//填写跳转页面
 
+    }
     </script>
 </body>
 </html>
