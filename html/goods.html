@@ -5,10 +5,10 @@
     <title>商品详情</title>
     <link rel="stylesheet" href="../css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="../css/myCss.css" type="text/css">
-    <script src="../js/bootstrap.min.js" type="text/javascript"></script>
     <script src="../js/jquery-3.4.1.min.js" type="text/javascript"></script>
-    <script src="../js/myJs.js" type="text/javascript"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/myJs.js"></script>
+
 </head>
 <body>
 <!--全局导航栏-->
@@ -137,7 +137,7 @@
                                     </div>
                             </div>
                         </div>
-                    </div><br/>
+                    </div><br/><br/><br/>
                     <div class="row">
                         <div class="col-xl-7"></div>
                         <div class="col-xl-5">
@@ -158,15 +158,196 @@
                 </div>
 
             </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-12">
+                <div style="border: #4e555b 2px solid" ></div>
 
+            </div>
         </div>
 
+        <div class="row">
+            <div class="col-xl-1"></div>
+            <div class="col-xl-10">
+                <div >
+                    <div style="border-bottom: 1px solid orange; ">
+                        <ul class="myul">
+                            <li id="spcs1" class="myli active"  onclick="spcs()">商品详情</li>
+                            <li id="sphb1" class="myli" onclick="sphb()">宣传海报</li>
+                            <li id="sppj1" class="myli" onclick="sppj()">商品评价(1800+)</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-1"></div>
+            <div class="col-xl-10" style="min-height: 200px">
+                <!--商品参数-->
+                <div id="spcs">
+                    <table class="table" style="background: #eeeeee">
+                        <tbody>
+                        <tr>
+                            <th scope="row"></th>
+                            <td scope="col">商品名称：三星Fold</td>
+                            <td scope="col">商品编号：100005427837</td>
+                            <td scope="col">商品毛重：0.751kg</td>
+                            <td scope="col">商品产地：中国大陆</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"></th>
+                            <td scope="col">CPU型号：骁龙855</td>
+                            <td scope="col">运行内存：12GB</td>
+                            <td scope="col">机身存储：512GB</td>
+                            <td scope="col">存储卡：不支持存储卡</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"></th>
+                            <td scope="col">摄像头数量：后置三摄</td>
+                            <td scope="col">后摄主摄像素：1200万像素</td>
+                            <td scope="col">前摄主摄像素：1000万像素</td>
+                            <td scope="col">主屏幕尺寸（英寸）：7.3英寸</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"></th>
+                            <td scope="col">分辨率：QHD+及以上</td>
+                            <td scope="col">屏幕比例：21:9</td>
+                            <td scope="col">屏幕前摄组合：其他</td>
+                            <td scope="col">电池容量（mAh）：4380</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"></th>
+                            <td scope="col">充电器：9V/1.67A</td>
+                            <td scope="col">机身颜色：量子黑</td>
+                            <td scope="col">操作系统：Android(安卓)</td>
+                            <td scope="col" style="text-align: right"><a style="color: black" href="#"> 更多参数>>></a></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--商品海报-->
+                <div id="sphb" style="display: none;">
+                    <div style="margin-left: 250px;">
+                    <img src="../pic/js-0.jpg" width="750">
+                    <img src="../pic/js-1.jpg" width="750">
+                    <img src="../pic/js-2.jpg">
+                    <img src="../pic/js-3.jpg">
+                    <img src="../pic/js-4.jpg">
+                    <img src="../pic/js-5.jpg">
+                    </div>
+                </div>
+                <!--商品评价-->
+                <div id="sppj" style="display: none">
+                    <div id="accordion">
+                        <div class="card">
+                            <div class="card-header">
+                                <img src="../pic/tx-2.svg" width="30" height="30">
+                                <a class="card-link" data-toggle="collapse" href="#collapseOne">
+                                    <b>来自远方</b> 的评价&nbsp;&nbsp;&nbsp;&nbsp;
+                                </a>
+                                <span class="glyphicon glyphicon-star" style="color: red"></span>
+                                <span class="glyphicon glyphicon-star" style="color: red"></span>
+                                <span class="glyphicon glyphicon-star" style="color: red"></span>
+                                <span class="glyphicon glyphicon-star" style="color: red"></span>
+                                <span class="glyphicon glyphicon-star" style="color: red"></span>
+                            </div>
+                            <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                                <div class="card-body">
+                                    首先星选自营的东西购买放心而且还有保障，京东物流和派送小哥服务都很棒。实话 外观很漂亮 拆上很适合用单手操作，打开后更适合看电视和游戏，随时配件也很牛X 细节图和官网介绍的一样 本人自己感觉 黑色确定很漂亮 科技感十足 。唯一的遗憾就是不是双卡，只能单卡。品质外质100分 早买早体验……
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <img src="../pic/tx-1.svg" width="30" height="30">
+                                <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo">
+                                    <b> 隔壁老王</b>  的评价&nbsp;&nbsp;&nbsp;&nbsp;
+                                </a>
+                                <span class="glyphicon glyphicon-star" style="color: red"></span>
+                                <span class="glyphicon glyphicon-star" style="color: red"></span>
+                                <span class="glyphicon glyphicon-star" style="color: red"></span>
+                                <span class="glyphicon glyphicon-star" style="color: red"></span>
+                                <span class="glyphicon glyphicon-star" style="color: red"></span>
+                            </div>
+                            <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                    其他特色：首先来说机身的颜色特别好，钢琴烤漆质感。柔性折叠屏绝对是现在手机市场里最前沿科技的产物了。无论大小还是手感都特别好，而且搭配了5G网络，绝对刷爆朋友圈。唯一不足的两点就是价格和续航。真的是头疼！！！！！！！！
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header">
+                                <img src="../pic/tx-3.svg" width="30" height="30">
+                                <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree">
+                                    <b> 隔壁猪猪</b> 的评价&nbsp;&nbsp;&nbsp;&nbsp;
+                                </a>
+                                <span class="glyphicon glyphicon-star" style="color: red"></span>
+                                <span class="glyphicon glyphicon-star" style="color: red"></span>
+                                <span class="glyphicon glyphicon-star" style="color: red"></span>
+                                <span class="glyphicon glyphicon-star" style="color: red"></span>
+                            </div>
+                            <div id="collapseThree" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                    高端高端就是不一样的高端科技产品，一直以来用的都是三星系列的手机产品！三星的技术很成熟折叠后4.6寸的小屏与展开后的7.3寸的大小屏之间的切换以及多任务模式黑科技满满的感觉！个人感觉更具易用性，折叠后的FOLD很轻易地从口袋里拿出来不会星得大！
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <img src="../pic/tx-4.svg" width="30" height="30">
+                                <a class="card-link" data-toggle="collapse" href="#collapseFour">
+                                    <b>苦逼程序猿</b> 的评价&nbsp;&nbsp;&nbsp;&nbsp;
+                                </a>
+                                <span class="glyphicon glyphicon-star" style="color: red"></span>
+                                <span class="glyphicon glyphicon-star" style="color: red"></span>
+                                <span class="glyphicon glyphicon-star" style="color: red"></span>
+                                <span class="glyphicon glyphicon-star" style="color: red"></span>
+                                <span class="glyphicon glyphicon-star" style="color: red"></span>
+                            </div>
+                            <div id="collapseFour" class="collapse" data-parent="#accordion">
+                                <div class="card-body">
+                                    和想象中一样，比华为的饥饿营销有人情味多了！还送了蓝牙耳机，发货也很给力。品质外质100分 早买早体验……
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            </div>
+        </div>
 
     </div>
 </div>
 <script>
     function jgc() {
         window.location.href="./myShoppingCart.html";//填写跳转页面
+    }
+    function spcs() {
+        $("#spcs").attr("style","display:inline");
+        $("#sphb").attr("style","display:none");
+        $("#spcs1").addClass("active");
+        $("#sphb1").removeClass("active");
+        $("#sppj1").removeClass("active");
+    }
+    function sppj() {
+        $("#spcs").fadeOut("quick");
+        $("#sphb").fadeOut("quick");
+        $("#sppj").fadeIn("slow");
+        $("#spcs1").removeClass("active");
+        $("#sphb1").removeClass("active");
+        $("#sppj1").addClass("active");
+
+
+    }
+    function sphb() {
+        $("#spcs").fadeOut("quick");
+        $("#sphb").fadeIn("slow");
+        $("#spcs1").removeClass("active");
+        $("#sppj1").removeClass("active");
+        $("#sphb1").addClass("active");
     }
 </script>
 </body>
