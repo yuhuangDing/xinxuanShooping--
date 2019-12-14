@@ -304,11 +304,30 @@ ul{
 .change-goods-num {
     width: 148px;
     height: 38px;
-    margin-top: 20px;
+
    border: 1px solid
     #e0e0e0;
     text-align: center;
 
     position: relative;
 
+}
+/****************************商品详情点击CSS***************************************************************/
+.chosepho{
+    border: #6c757d  2px solid;
+
+}
+.myborder{
+    margin-left: 4px;
+    margin-right: 4px;
+}
+.mylist{
+    margin-top: 40px;
+
+}
+.myicon{
+    margin-top: 10px;
+}
+.myselsect-border{
+    border:2px  #fd7e14 solid;
 }
