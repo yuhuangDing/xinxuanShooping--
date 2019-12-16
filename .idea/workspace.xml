@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4e0737e4-9513-463d-9f0e-27a34780d01f" name="Default Changelist" comment="">
+    <list default="true" id="4e0737e4-9513-463d-9f0e-27a34780d01f" name="Default Changelist" comment="--Build 1.7 新增商品详情展示，评价，海报折叠页面，已完成本项目所有设计页面">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/goods.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/goods.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +95,7 @@
       <workItem from="1576060548994" duration="3858000" />
       <workItem from="1576076479741" duration="3438000" />
       <workItem from="1576164795414" duration="427000" />
-      <workItem from="1576299573268" duration="12745000" />
+      <workItem from="1576299573268" duration="12879000" />
     </task>
     <task id="LOCAL-00001" summary="‘demo01">
       <created>1575720847480</created>
@@ -217,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576316259589</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="--Build 1.7 新增商品详情展示，评价，海报折叠页面，已完成本项目所有设计页面">
+      <created>1576316878221</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1576316878221</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -258,10 +264,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1576060564332" />
-    <state x="385" y="0" width="990" height="804" key="CommitChangelistDialog2" timestamp="1576316257360">
+    <state x="385" y="0" width="990" height="804" key="CommitChangelistDialog2" timestamp="1576316883819">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="385" y="0" width="990" height="804" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1576316257360" />
+    <state x="385" y="0" width="990" height="804" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1576316883819" />
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1576063930926">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
