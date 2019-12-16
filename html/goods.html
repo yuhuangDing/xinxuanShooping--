@@ -43,7 +43,7 @@
                     </span>购物车</a>
         </li>
     </ul>
-    </div>
+
 
 </nav>
 
@@ -165,14 +165,14 @@
 
             </div>
         </div>
-
+        <!--商品参数，评价，海报部分-->
         <div class="row">
             <div class="col-xl-1"></div>
             <div class="col-xl-10">
                 <div >
                     <div style="border-bottom: 1px solid orange; ">
                         <ul class="myul">
-                            <li id="spcs1" class="myli active"  onclick="spcs()">商品详情</li>
+                            <li id="spcs1" class="myli activei"  onclick="spcs()">商品详情</li>
                             <li id="sphb1" class="myli" onclick="sphb()">宣传海报</li>
                             <li id="sppj1" class="myli" onclick="sppj()">商品评价(1800+)</li>
 
@@ -328,26 +328,28 @@
     function spcs() {
         $("#spcs").attr("style","display:inline");
         $("#sphb").attr("style","display:none");
-        $("#spcs1").addClass("active");
-        $("#sphb1").removeClass("active");
-        $("#sppj1").removeClass("active");
+        $("#sppj").attr("style","display:none");
+        $("#spcs1").addClass("activei");
+        $("#sphb1").removeClass("activei");
+        $("#sppj1").removeClass("activei");
     }
     function sppj() {
         $("#spcs").fadeOut("quick");
         $("#sphb").fadeOut("quick");
         $("#sppj").fadeIn("slow");
-        $("#spcs1").removeClass("active");
-        $("#sphb1").removeClass("active");
-        $("#sppj1").addClass("active");
+        $("#spcs1").removeClass("activei");
+        $("#sphb1").removeClass("activei");
+        $("#sppj1").addClass("activei");
 
 
     }
     function sphb() {
         $("#spcs").fadeOut("quick");
+        $("#sppj").fadeOut("quick");
         $("#sphb").fadeIn("slow");
-        $("#spcs1").removeClass("active");
-        $("#sppj1").removeClass("active");
-        $("#sphb1").addClass("active");
+        $("#spcs1").removeClass("activei");
+        $("#sppj1").removeClass("activei");
+        $("#sphb1").addClass("activei");
     }
 </script>
 </body>
