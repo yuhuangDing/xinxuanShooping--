@@ -8,6 +8,8 @@
     <script src="../js/jquery-3.4.1.min.js" type="text/javascript"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/myJs.js"></script>
+    <script src="../js/vue.min.js"></script>
+
 
 </head>
 <body>
@@ -254,7 +256,7 @@
                             </div>
                             <div id="collapseOne" class="collapse show" data-parent="#accordion">
                                 <div class="card-body">
-                                    首先星选自营的东西购买放心而且还有保障，京东物流和派送小哥服务都很棒。实话 外观很漂亮 拆上很适合用单手操作，打开后更适合看电视和游戏，随时配件也很牛X 细节图和官网介绍的一样 本人自己感觉 黑色确定很漂亮 科技感十足 。唯一的遗憾就是不是双卡，只能单卡。品质外质100分 早买早体验……
+                                    <div id="pj1-1"><div  v-html="message"></div></div>
                                 </div>
                             </div>
                         </div>
@@ -272,11 +274,10 @@
                             </div>
                             <div id="collapseTwo" class="collapse" data-parent="#accordion">
                                 <div class="card-body">
-                                    其他特色：首先来说机身的颜色特别好，钢琴烤漆质感。柔性折叠屏绝对是现在手机市场里最前沿科技的产物了。无论大小还是手感都特别好，而且搭配了5G网络，绝对刷爆朋友圈。唯一不足的两点就是价格和续航。真的是头疼！！！！！！！！
-                                </div>
+                                    <div id="pj2-2"><div  v-html="message"></div></div>
+                                    </div>
                             </div>
                         </div>
-
                         <div class="card">
                             <div class="card-header">
                                 <img src="../pic/tx-3.svg" width="30" height="30">
@@ -290,8 +291,8 @@
                             </div>
                             <div id="collapseThree" class="collapse" data-parent="#accordion">
                                 <div class="card-body">
-                                    高端高端就是不一样的高端科技产品，一直以来用的都是三星系列的手机产品！三星的技术很成熟折叠后4.6寸的小屏与展开后的7.3寸的大小屏之间的切换以及多任务模式黑科技满满的感觉！个人感觉更具易用性，折叠后的FOLD很轻易地从口袋里拿出来不会星得大！
-                                </div>
+                                    <div id="pj3-3"><div  v-html="message"></div></div>
+                                  </div>
                             </div>
                         </div>
                         <div class="card">
@@ -308,19 +309,92 @@
                             </div>
                             <div id="collapseFour" class="collapse" data-parent="#accordion">
                                 <div class="card-body">
-                                    和想象中一样，比华为的饥饿营销有人情味多了！还送了蓝牙耳机，发货也很给力。品质外质100分 早买早体验……
+                                    <div id="pj4-4"><div  v-html="message"></div></div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="row" >
+                        <div class="col-xl-6" style="margin-left: 40%">
+                            <br/>
+                            <h5 style="color: #4e555b">更多评价继续下滑！</h5>
+                            <div class="spinner-grow text-primary" role="status" style="margin-left: -40px">
+                                <span class="sr-only">Loading...</span>
+                            </div>
+                            <div class="spinner-grow text-secondary" role="status">
+                                <span class="sr-only">Loading...</span>
+                            </div>
+                            <div class="spinner-grow text-success" role="status">
+                                <span class="sr-only">Loading...</span>
+                            </div>
+                            <div class="spinner-grow text-danger" role="status">
+                                <span class="sr-only">Loading...</span>
+                            </div>
+                            <div class="spinner-grow text-warning" role="status">
+                                <span class="sr-only">Loading...</span>
+                            </div>
+                            <div class="spinner-grow text-info" role="status">
+                                <span class="sr-only">Loading...</span>
+                            </div>
+                            <div class="spinner-grow text-dark" role="status">
+                                <span class="sr-only">Loading...</span>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
+
             </div>
         </div>
     </div>
 </div>
 
+<!--
+
+<div id="app">
+    <div v-html="message"></div>
+</div>
 
 <script>
+new Vue({
+  el: '#app',
+  data: {
+    message: '<h1>菜鸟教程</h1>'
+  }
+})
+</script>
+
+-->
+
+<script>
+    new Vue({
+        el: '#pj1-1',
+        data: {
+            message: '首先星选自营的东西购买放心而且还有保障，京东物流和派送小哥服务都很棒。实话 外观很漂亮 拆上很适合用单手操作，打开后更适合看电视和游戏，随时配件也很牛X 细节图和官网介绍的一样 本人自己感觉 黑色确定很漂亮 科技感十足 。唯一的遗憾就是不是双卡，只能单卡。品质外质100分 早买早体验……'
+        }
+    })
+    new Vue({
+        el: '#pj2-2',
+        data: {
+            message: '其他特色：首先来说机身的颜色特别好，钢琴烤漆质感。柔性折叠屏绝对是现在手机市场里最前沿科技的产物了。无论大小还是手感都特别好，而且搭配了5G网络，绝对刷爆朋友圈。唯一不足的两点就是价格和续航。真的是头疼！！！！！！！！'
+
+    }
+    })
+    new Vue({
+        el: '#pj3-3',
+        data: {
+            message: '高端高端就是不一样的高端科技产品，一直以来用的都是三星系列的手机产品！三星的技术很成熟折叠后4.6寸的小屏与展开后的7.3寸的大小屏之间的切换以及多任务模式黑科技满满的感觉！个人感觉更具易用性，折叠后的FOLD很轻易地从口袋里拿出来不会星得大！'
+
+
+        }
+    })
+
+    new Vue({
+        el: '#pj4-4',
+        data: {
+            message:'和想象中一样，比华为的饥饿营销有人情味多了！还送了蓝牙耳机，发货也很给力。品质外质100分 早买早体验……'
+    }
+    })
     function jgc() {
         window.location.href="./myShoppingCart.html";//填写跳转页面
     }
